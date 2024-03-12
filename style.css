@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,700;1,100;1,300;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.main-div {
+    height: 455px;
+    width: 315px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #232222;
+    position: absolute;
+    top: 10%;
+}
+
+.imag-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+}
+
+img {
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.name-text,
+.location-text,
+.profession-text {
+    position: relative;
+    top: 10px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Mukta', Courier, monospace;
+    font-size: x-large;
+}
+
+.location-text {
+    font-size: large;
+    color: #d5d59c;
+    top: 8px;
+}
+
+.profession-text {
+    font-size: small;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+a:link,
+a:visited {
+    background-color: #333333;
+    color: white;
+    padding: 6px 100px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+a:hover,
+a:active {
+    background-color: #404040;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .main-div {
+        width: 90%;
+        height: 60%;
+        /* Adjust width for smaller screens */
+    }
+
+    img {
+        width: 60%;
+        /* Adjust image size for smaller screens */
+    }
+
+    .name-text,
+    .location-text,
+    .profession-text {
+        font-size: medium;
+        /* Adjust font size for smaller screens */
+    }
+
+    a {
+        padding: 6px 10px;
+        /* Adjust button padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-div {
+        width: 90%;
+        height: 100%;
+        /* Adjust width for smaller screens */
+    }
+
+    img {
+        width: 60%;
+        /* Adjust image size for smaller screens */
+    }
+
+    .name-text,
+    .location-text,
+    .profession-text {
+        font-size: medium;
+        /* Adjust font size for smaller screens */
+    }
+
+    a {
+        padding: 6px 10px;
+        /* Adjust button padding for smaller screens */
+    }
+}

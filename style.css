@@ -32,13 +32,15 @@ body {
     flex-direction: column;
     position: relative;
     top: 20px;
+
 }
 
 img {
-    width: 40%;
-    height: 50%;
+    width: 45%;
+    height: auto;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: fill;
+    border: 2.5px solid white;
 
 }
 
@@ -82,55 +84,4 @@ a:visited {
 a:hover,
 a:active {
     background-color: #404040;
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 600px) {
-    .main-div {
-        width: 90%;
-        height: 60%;
-        /* Adjust width for smaller screens */
-    }
-
-    img {
-        width: 60%;
-        /* Adjust image size for smaller screens */
-    }
-
-    .name-text,
-    .location-text,
-    .profession-text {
-        font-size: medium;
-        /* Adjust font size for smaller screens */
-    }
-
-    a {
-        padding: 6px 10px;
-        /* Adjust button padding for smaller screens */
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .main-div {
-        width: 90%;
-        height: 100%;
-        /* Adjust width for smaller screens */
-    }
-
-    img {
-        width: 60%;
-        /* Adjust image size for smaller screens */
-    }
-
-    .name-text,
-    .location-text,
-    .profession-text {
-        font-size: medium;
-        /* Adjust font size for smaller screens */
-    }
-
-    a {
-        padding: 6px 10px;
-        /* Adjust button padding for smaller screens */
-    }
 }
